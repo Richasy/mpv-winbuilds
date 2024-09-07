@@ -67,7 +67,7 @@ jobs:
             const commit = await github.rest.repos.getCommit({
               owner: 'Richasy',
               repo: 'mpv',
-              ref: `d3d11`
+              ref: `uwp`
             })
             core.setOutput('sha', String(commit.data.sha))
             
